@@ -1,0 +1,14 @@
+legs=int(input("Enter total no of legs="))
+heads=int(input("Enter total no of heads="))
+a=0
+for i in range(heads+1):
+    cows=i
+    hens=heads-cows
+    r=(cows*4)+(hens*2)
+    if r==legs:
+        print("cows=",cows)
+        print("hens",hens)
+        a=1
+if a==0:
+    print("Solution not found")
+    
