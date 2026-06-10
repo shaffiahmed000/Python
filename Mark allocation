@@ -2,6 +2,6 @@ name=["thor","captain america","hulk","tony stark","spiderman"]
 marks=[34,65,23,98,43]
 pos=1
 for i in range(5):
-    if marks[i]>40:
-        print("{}.{} has scored {}%".format(i+1,name[i],marks[i]))
+    if marks[i]>35:
+        print("{}.{} has scored {}".format(pos,name[i],marks[i]))
         pos=pos+1
