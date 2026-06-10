@@ -1,0 +1,5 @@
+names=["thor","captain america","hulk","tony stark","spiderman"]
+marks=[34,65,23,98,43]
+for i in range(len(names)):
+    percentage=(marks[i]/300)*100
+    print ("{}.{} has scored {}%".format(i+1,names[i],marks[i]))
