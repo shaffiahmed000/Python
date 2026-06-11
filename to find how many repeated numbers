@@ -1,0 +1,10 @@
+a=8473857826
+b=str(a)
+l=[]
+r=0
+for i in b:
+    if b.count(i)>1 and i not in l:
+        l.append(i)
+        r += 1
+print("Repeated digits:",l)
+print("Count:",r)
