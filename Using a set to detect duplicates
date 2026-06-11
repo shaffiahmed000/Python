@@ -1,0 +1,11 @@
+x=2
+y=4
+a="ABCABCABC"
+s=set()
+for i in a:
+    if i not in s:
+        s.add(i)
+        x=x+2
+    else:
+        y=y+2
+print(x+y)
