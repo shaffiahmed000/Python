@@ -1,0 +1,5 @@
+a=25348
+b={"2","5","3","4","8"}
+from collections import Counter
+b=Counter(str(a))
+print(b)
