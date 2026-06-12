@@ -1,0 +1,8 @@
+a=89346354
+b=list(str(a))
+c=set(b)
+print(c)
+d=len(b)
+e=len(c)
+f=d-e
+print(f)
