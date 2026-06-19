@@ -1,0 +1,7 @@
+a=[12,443,54,"dsafd",32,4,"shaff"]
+numbers=[]
+for x in a:
+    if type(x) is int:
+        numbers.append(x)
+numbers.sort()
+print(numbers)
