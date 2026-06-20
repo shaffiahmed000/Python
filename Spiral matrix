@@ -1,0 +1,24 @@
+a=[[76,44,99,76,34,24],
+   [33,59,67,55,43,23],
+   [11,22,33,44,95,67],
+   [51,52,53,54,57,79],
+   [67,68,69,60,63,42]]
+top=0
+bottom=len(a)-1
+left=0
+right=len(a[0])-1
+while left<=right and top<=bottom:
+    for i in range(left,right+1):
+        print(a[top][i],end=" ")
+    top=top+1
+    for i in range(top,bottom+1):
+        print(a[i][right],end=" ")
+    right=right-1
+    if top<=bottom:
+        for i in range(right,left-1,-1):
+            print(a[bottom][i],end=" ")
+        bottom=bottom-1
+    if top<right:
+        for i in range(bottom,top-1,-1):
+            print(a[i][left],end=" ")
+        left=left+1
